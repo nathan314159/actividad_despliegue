@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .outter-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #task {
+        height: 20px;
+        width: 150px;
+        background-color: aliceblue;
+        border: 2px solid;
+        margin: 5px;
+    }
+
+    .r{
+        margin: 15px;
+    }
+</style>
+
+<body>
+    <h1>Pucesi Sports</h1>
+    <div class="outter-container">
+
+        <form action="">
+            <input type="text" placeholder="Ingresa tu actividad aqui...">
+            <button onclick="agregar()">Agregar</button>
+        </form>
+    </div>
+
+    <div class="r">
+        <div class="container">
+            <div class="row">
+                <div class="col"><input type="checkbox"></div>
+                <div id="task" class="col">Tast</div>
+                <div class="col"><button onclick="eliminar()">Eliminar</button></div>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col"><input type="checkbox"></div>
+                <div id="task" class="col">Tast</div>
+                <div class="col"><button onclick="eliminar()">Eliminar</button></div>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col"><input type="checkbox"></div>
+                <div id="task" class="col">Tast</div>
+                <div class="col"><button id="elimina" onclick="eliminar()">Eliminar</button></div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        function agregar() {
+            alert("tarea agregar");
+        }
+
+        function eliminar() {
+            alert("eliminar");
+        }
+
+        const btn_eliminar = document.getElementById("eliminar");
+
+        btn_eliminar.addEventListener("click", () => {
+            const val = 
+        })
+
+    </script>
+</body>
+
+</html>
